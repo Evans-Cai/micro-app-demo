@@ -1,17 +1,18 @@
 <template>
-  <micro-app
-      v-bind="appConfig"
-      @created="handleCreated"
-      @beforemount="handleBeforemount"
-      @mounted="handleMounted"
-      @unmount="handleUnmount"
-      @error="handleError"
-      @datachange="handleDataChange"
-  ></micro-app>
+  <div>
+    <micro-app
+        v-bind="appConfig"
+        @created="handleCreated"
+        @beforemount="handleBeforemount"
+        @mounted="handleMounted"
+        @unmount="handleUnmount"
+        @error="handleError"
+        @datachange="handleDataChange"
+    ></micro-app>
+  </div>
 </template>
 <script setup>
   import config from '@/config.js';
-
   console.log(config);
   const appConfig = {
     name: config.web.name,

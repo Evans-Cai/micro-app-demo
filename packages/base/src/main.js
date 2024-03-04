@@ -1,30 +1,7 @@
 import { createApp } from 'vue';
 import './style.scss';
 import App from './App.vue';
-import store from './store/index.js';
 import router from './router/index.js';
-import install from './plugins/install.js';
-//
-import '@varlet/touch-emulator';
-// 引入模块后自动生效
-import { Lazyload, setToastDefaultOptions, resetToastDefaultOptions } from 'vant';
-//
-setToastDefaultOptions({ duration: 2000 });
-setToastDefaultOptions('loading', { forbidClick: true });
-resetToastDefaultOptions();
-resetToastDefaultOptions('loading');
-// Toast
-import 'vant/es/toast/style/index.mjs';
-// Dialog
-import 'vant/es/dialog/style/index.mjs';
-// Notify
-import 'vant/es/notify/style/index.mjs';
-// ImagePreview
-import 'vant/es/image-preview/style/index.mjs';
-//
-import SvgIcon from '@jamescoyle/vue-icon';
-// directive
-import focusable from 'vue-tv-focusable';
 //
 import microApp from '@micro-zoe/micro-app';
 // 全局监听
@@ -97,11 +74,5 @@ microApp.start({
 });
 // 创建vue实例
 const app = createApp(App);
-// app.use(vLoading);
-app.use(focusable);
-app.use(install);
-app.use(store);
 app.use(router);
-app.use(Lazyload);
-app.component('svg-icon', SvgIcon);
 app.mount('#app');

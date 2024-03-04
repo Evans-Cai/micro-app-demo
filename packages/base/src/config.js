@@ -1,4 +1,3 @@
-const url = location.origin + location.pathname;
 const config = {
   development: {
     web: {
@@ -15,12 +14,12 @@ const config = {
   production: {
     web: {
       name: 'web',
-      url: `${url}packages/web`,
+      url: `${import.meta.env.VITE_APP_WEB_URL}/packages/web`,
       baseroute: '/web',
     },
     mobile: {
       name: 'mobile',
-      url: `${url}packages/mobile`,
+      url: `${import.meta.env.VITE_APP_WEB_URL}//packages/mobile`,
       baseroute: '/mobile',
     }
   }
