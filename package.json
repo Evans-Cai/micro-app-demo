@@ -10,6 +10,7 @@
     "start:base": "yarn workspace base run serve",
     "start:web": "yarn workspace web run serve",
     "start:mobile": "yarn workspace mobile run serve",
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [

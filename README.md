@@ -1,4 +1,4 @@
-# Micro App + Vite(base)
+# Micro App + Vite(主应用)
 
 这是个基于Micro App + Vite 的微应用模板，用于开发微应用。
 
@@ -60,6 +60,8 @@ yarn build
 npm i -g http-server
 yarn add http-server --global
 http-server ./dist
+或者
+npm run server()
 ```
 
 ## 相关链接
