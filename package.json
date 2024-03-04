@@ -8,6 +8,7 @@
     "start": "concurrently --kill-others \"yarn workspace base run serve\" \"yarn workspace web run serve\" \"yarn workspace mobile run serve\"",
     "build": "yarn workspaces run build && node build.js",
     "start:base": "yarn workspace base run serve",
+    "start:h5": "yarn workspace h5 run serve",
     "start:web": "yarn workspace web run serve",
     "start:mobile": "yarn workspace mobile run serve",
     "server": "node server.js",

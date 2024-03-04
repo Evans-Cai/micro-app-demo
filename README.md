@@ -23,6 +23,10 @@
 - 项目是标准应用，可以作为开发的起始模板。packages目录是微应用的标准模板，可以用于开发任何微应用。
 - 如果你想了解微前端的原理，可以参考[这里](https://micro-zoe.github.io/micro-app/docs.html#/zh-cn/understand)。
 - 如果你有什么问题，欢迎提issue。
+- 在创建自己的子应用是注意最好把挂载的《index.html》的【#app|#root】替换成唯一的Id名称，这样可以避免多个子应用的css冲突。主应用（base）或者子应用的挂载Id最好不要一样
+- 每一个子应用的config在packages/base/src的config.js中配置，可以修改子应用的路由、路由前缀、路由模式、路由重定向、路由滚动、路由动画、路由钩子等。
+- 配置里每一个子应用的路由在packages/base/src/pages里配置。config.js是一一对应的
+- 建议最好看下micro-app的原理，可以参考[这里](https://micro-zoe.github.io/micro-app/docs.html#/zh-cn/understand)。
 
 ## 项目结构
 

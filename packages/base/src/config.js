@@ -10,6 +10,11 @@ const config = {
       url: 'http://localhost:3002/',
       baseroute: '/mobile',
     },
+    h5: {
+      name: 'h5',
+      url: 'http://localhost:3003/',
+      baseroute: '/h5',
+    },
   },
   production: {
     web: {
@@ -21,7 +26,12 @@ const config = {
       name: 'mobile',
       url: `${import.meta.env.VITE_APP_WEB_URL}//packages/mobile`,
       baseroute: '/mobile',
-    }
+    },
+    h5: {
+      name: 'h5',
+      url: `${import.meta.env.VITE_APP_WEB_URL}/packages/h5`,
+      baseroute: '/h5',
+    },
   }
 };
 export default config[import.meta.env.VITE_APP_PACKAGES];
