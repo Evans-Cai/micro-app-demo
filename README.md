@@ -21,6 +21,8 @@
 - 项目只是一个demo，用于展示微前端的开发流程。拉下来项目后建议自行改造，可以用于开发任何项目。
 - 项目的base是主应用，可以作为开发的起始模板。理论上base可以是vue，react，angular都行，这里的demo是vite+vue3的， web，mobile是vue项目，h5端是react项目。
 - 项目是标准应用，可以作为开发的起始模板。packages目录是微应用的标准模板，可以用于开发任何微应用。
+- 如果你想了解微前端的原理，可以参考[这里](https://micro-zoe.github.io/micro-app/docs.html#/zh-cn/understand)。
+- 如果你有什么问题，欢迎提issue。
 
 ## 项目结构
 
