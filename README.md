@@ -1,6 +1,48 @@
-# Vue 3 + Vite
+# Micro App + Vite(base)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+这是个基于 Vite 的微应用模板，用于开发微应用。
+
+## 项目结构
+- packages/base - 基础模板
+- packages/mobile - 移动端模板
+- packages/web - PC 端模板
+
+## 特性
+- [Vite](https://vitejs.dev/)
+- [Vue](https://v3.cn.vuejs.org/)
+- [Element Plus](https://element-plus.gitee.io/#/zh-CN)
+- [Element Plus 中文文档](https://element-plus.gitee.io/#/zh-CN)
+- [Vite + Vue3 + Element Plus](https://github.com/element-plus/vite-plugin-element-plus/tree/next/examples/vue3-vite]
+- [react](https://reactjs.org/]
+- [antd](https://ant.design/)
+
+## 开发环境
+- [Node.js](https://nodejs.org/en/) (>=16.x)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
+
+## 安装依赖
+```bash
+yarn install
+```
+## 开发
+```bash
+yarn start:base # post:3000
+yarn start:mobile # post:3001
+yarn start:web # post:3002
+ ```
+## 打包
+```bash
+yarn build
+```
+
+## 相关链接
+- [Vite](https://vitejs.dev/)
+- [Vue](https://v3.cn.vuejs.org/)
+- [Element Plus](https://element-plus.gitee.io/#/zh-CN)
+- [Element Plus 中文文档](https://element-plus.gitee.io/#/zh-CN)
+- [Vite + Vue3 + Element Plus](https://github.com/element-plus/vite-plugin-element-plus/tree/next/examples/vue3-vite]
+- [react](https://reactjs.org/]
+- [antd](https://ant.design/)
 
 ## Recommended IDE Setup
 
