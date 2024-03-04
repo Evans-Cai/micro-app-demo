@@ -30,9 +30,17 @@ yarn start:base # post:3000
 yarn start:mobile # post:3001
 yarn start:web # post:3002
  ```
+
 ## 打包
 ```bash
 yarn build
+```
+
+## 本地运行
+```bash
+npm i -g http-server
+yarn add http-server --global
+http-server ./dist
 ```
 
 ## 相关链接
